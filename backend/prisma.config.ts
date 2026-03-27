@@ -9,6 +9,6 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: process.env["DATABASE_URL"] ?? "postgresql://crm_admin:crm_password@localhost:5432/smart_crm?schema=public",
+    url: process.env["POSTGRES_URL_NON_POOLING"] || process.env["DATABASE_URL"] || "postgresql://crm_admin:crm_password@localhost:5432/smart_crm?schema=public",
   },
 });
