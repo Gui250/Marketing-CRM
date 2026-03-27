@@ -1,12 +1,4 @@
-import { Area, AreaChart, CartesianGrid, XAxis, YAxis,### Function Size Optimization
-- **vercel.json**: Changed the backend entry point to `backend/server.js` and removed the `includeFiles: ["backend/**"]` directive. This prevents Vercel from including the entire backend directory (and its `node_modules`) into the serverless function bundle.
-- **schema.prisma**: Explicitly set `binaryTargets = ["native", "rhel-openssl-3.0.x"]`. This ensures only the necessary Prisma engine for Vercel's environment is included, reducing the bundle size.
-
-## Verification Results
-
-### Overall Build Success
-I ran the full build from the root directory, which successfully generated the Prisma Client and built the frontend.
- Tooltip, ResponsiveContainer, Legend } from 'recharts'
+import { Area, AreaChart, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 
 interface TimeSeriesChartProps {
   data: any[]
