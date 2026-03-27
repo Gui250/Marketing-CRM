@@ -1,0 +1,58 @@
+{
+  "hasToken": true,
+  "summary": {
+    "faturamentoLiquido": 0,
+    "gastosAnuncios": 0,
+    "roas": 0,
+    "lucro": 0,
+    "vendasPendentes": 0,
+    "roi": 0,
+    "margemLucro": 0,
+    "vendasReembolsadas": 0,
+    "reembolso": 0,
+    "arpu": 0,
+    "imposto": 0,
+    "chargeback": 0.7,
+    "totalSales": 1,
+    "cpc": 0,
+    "cpm": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "linkClicks": 0
+  },
+  "paymentBreakdown": [
+    {
+      "name": "Pix",
+      "value": 0,
+      "color": "#6366f1"
+    },
+    {
+      "name": "Cartão",
+      "value": 0,
+      "color": "#3b82f6"
+    },
+    {
+      "name": "Boleto",
+      "value": 0,
+      "color": "#a3a3a3"
+    },
+    {
+      "name": "Outros",
+      "value": 0,
+      "color": "#f43f5e"
+    }
+  ],
+  "chartData": [],
+  "campaigns": [
+    {
+      "name": "[VENDAS] - CAPTACAO LEADS",
+      "meta": "OUTCOME_SALES · Guilherme Moreno - Conta 1",
+      "status": "Active"
+    },
+    {
+      "name": "Post do Instagram: Sua marca merece mais do que...",
+      "meta": "LINK_CLICKS · Guilherme Moreno - Conta 1",
+      "status": "Active"
+    }
+  ]
+}

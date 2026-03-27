@@ -1,0 +1,406 @@
+﻿--- Checking Token Info ---
+Token Info: {
+  "data": {
+    "app_id": "1264656538962822",
+    "type": "USER",
+    "application": "Teste",
+    "data_access_expires_at": 1782310767,
+    "expires_at": 1774540800,
+    "is_valid": true,
+    "scopes": [
+      "manage_fundraisers",
+      "read_insights",
+      "publish_video",
+      "catalog_management",
+      "private_computation_access",
+      "threads_business_basic",
+      "marketing_messages_messenger",
+      "pages_manage_cta",
+      "pages_manage_instant_articles",
+      "pages_show_list",
+      "read_page_mailboxes",
+      "ads_management",
+      "ads_read",
+      "business_management",
+      "pages_messaging",
+      "pages_messaging_phone_number",
+      "pages_messaging_subscriptions",
+      "instagram_basic",
+      "instagram_manage_comments",
+      "instagram_manage_insights",
+      "instagram_content_publish",
+      "leads_retrieval",
+      "instagram_manage_messages",
+      "attribution_read",
+      "page_events",
+      "pages_read_engagement",
+      "pages_manage_metadata",
+      "pages_read_user_content",
+      "pages_manage_ads",
+      "pages_manage_posts",
+      "pages_manage_engagement",
+      "whatsapp_business_messaging",
+      "instagram_branded_content_brand",
+      "instagram_branded_content_creator",
+      "instagram_branded_content_ads_brand",
+      "instagram_manage_events",
+      "instagram_manage_upcoming_events",
+      "manage_app_solution",
+      "pages_utility_messaging",
+      "paid_marketing_messages",
+      "whatsapp_business_manage_events",
+      "instagram_creator_marketplace_discovery",
+      "facebook_creator_marketplace_discovery",
+      "instagram_manage_contents",
+      "facebook_branded_content_ads_brand",
+      "public_profile"
+    ],
+    "granular_scopes": [
+      {
+        "scope": "pages_manage_cta",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_manage_instant_articles",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_show_list",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "read_page_mailboxes",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "ads_management"
+      },
+      {
+        "scope": "ads_read"
+      },
+      {
+        "scope": "business_management"
+      },
+      {
+        "scope": "pages_messaging",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_messaging_phone_number",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_messaging_subscriptions",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "instagram_basic",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_manage_comments",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_manage_insights",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_content_publish",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "leads_retrieval",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "instagram_manage_messages",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "attribution_read"
+      },
+      {
+        "scope": "page_events",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_read_engagement",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_manage_metadata",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_read_user_content",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_manage_ads",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_manage_posts",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "pages_manage_engagement",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "whatsapp_business_messaging"
+      },
+      {
+        "scope": "instagram_branded_content_brand",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_branded_content_creator",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_branded_content_ads_brand",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_manage_events",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "instagram_manage_upcoming_events",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "manage_app_solution",
+        "target_ids": [
+          "1264656538962822"
+        ]
+      },
+      {
+        "scope": "pages_utility_messaging",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "paid_marketing_messages"
+      },
+      {
+        "scope": "whatsapp_business_manage_events"
+      },
+      {
+        "scope": "instagram_creator_marketplace_discovery",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "facebook_creator_marketplace_discovery",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      },
+      {
+        "scope": "instagram_manage_contents",
+        "target_ids": [
+          "17841480462024807"
+        ]
+      },
+      {
+        "scope": "facebook_branded_content_ads_brand",
+        "target_ids": [
+          "1001280409732628"
+        ]
+      }
+    ],
+    "user_id": "122116061907230469"
+  }
+}
+
+--- Fetching Ad Accounts ---
+Ad Accounts: [
+  {
+    "id": "act_2031788257611058",
+    "name": "Guilherme Moreno",
+    "account_status": 1
+  },
+  {
+    "id": "act_1449436549942659",
+    "name": "Guilherme Moreno - Conta 1",
+    "account_status": 1
+  }
+]
+
+--- Campaigns for act_2031788257611058 (Guilherme Moreno) ---
+Campaigns: []
+Total: 0 campaigns
+
+--- Insights for act_2031788257611058 ---
+Insights: []
+
+--- Daily insights for act_2031788257611058 ---
+Daily: []
+
+--- Campaigns for act_1449436549942659 (Guilherme Moreno - Conta 1) ---
+Campaigns: [
+  {
+    "name": "[VENDAS] - CAPTACAO LEADS",
+    "status": "ACTIVE",
+    "objective": "OUTCOME_SALES",
+    "effective_status": "ACTIVE",
+    "id": "120241357335250171"
+  },
+  {
+    "name": "Post do Instagram: Sua marca merece mais do que...",
+    "status": "ACTIVE",
+    "objective": "LINK_CLICKS",
+    "effective_status": "ACTIVE",
+    "id": "120241350675010171"
+  }
+]
+Total: 2 campaigns
+
+--- Insights for act_1449436549942659 ---
+Insights: [
+  {
+    "spend": "296.65",
+    "impressions": "47793",
+    "clicks": "512",
+    "cpc": "0.579395",
+    "cpm": "6.206976",
+    "actions": [
+      {
+        "action_type": "onsite_conversion.total_messaging_connection",
+        "value": "8"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_block",
+        "value": "6"
+      },
+      {
+        "action_type": "link_click",
+        "value": "486"
+      },
+      {
+        "action_type": "page_engagement",
+        "value": "1452"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_welcome_message_view",
+        "value": "1"
+      },
+      {
+        "action_type": "comment",
+        "value": "1"
+      },
+      {
+        "action_type": "post_interaction_gross",
+        "value": "54"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_user_depth_2_message_send",
+        "value": "1"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_first_reply",
+        "value": "8"
+      },
+      {
+        "action_type": "post",
+        "value": "1"
+      },
+      {
+        "action_type": "onsite_conversion.post_save",
+        "value": "4"
+      },
+      {
+        "action_type": "post_engagement",
+        "value": "1452"
+      },
+      {
+        "action_type": "onsite_conversion.post_unlike",
+        "value": "12"
+      },
+      {
+        "action_type": "onsite_conversion.post_net_like",
+        "value": "36"
+      },
+      {
+        "action_type": "onsite_conversion.post_net_save",
+        "value": "4"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_conversation_started_7d",
+        "value": "8"
+      },
+      {
+        "action_type": "onsite_conversion.messaging_conversation_replied_7d",
+        "value": "4"
+      },
+      {
+        "action_type": "video_view",
+        "value": "912"
+      },
+      {
+        "action_type": "post_reaction",
+        "value": "48"
+      }
+    ],
+    "date_start": "2026-02-24",
+    "date_stop": "2026-03-25"
+  }
+]
+
+--- Daily insights for act_1449436549942659 ---
+Daily: []
