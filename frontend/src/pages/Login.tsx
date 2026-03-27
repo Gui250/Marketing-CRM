@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, BarChart2, Loader2 } from 'lucide-react'
 import axios from 'axios'
+import { getApiUrl } from '@/config/api'
 
 export function Login() {
   const [loading, setLoading] = useState(false)
@@ -17,7 +18,7 @@ export function Login() {
     setError('')
 
     try {
-      const res = await axios.post('http://localhost:3000/api/auth/login', { email, password })
+      const res = await axios.post(getApiUrl('/api/auth/login'), { email, password })
       localStorage.setItem('crm_token', res.data.token)
       localStorage.setItem('crm_user_email', res.data.user.email)
       localStorage.setItem('crm_user_name', res.data.user.name)

@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { TimeSeriesChart } from '@/components/TimeSeriesChart'
 import { cn } from '@/lib/utils'
 import axios from 'axios'
+import { getApiUrl } from '@/config/api'
 
 interface AdAccount {
   id: string
@@ -106,7 +107,7 @@ function TokenRequiredScreen({ expired, onSuccess }: { expired: boolean; onSucce
     setSaving(true)
     setError('')
     try {
-      await axios.post('http://localhost:3000/api/settings', { facebookAdsToken: token.trim() })
+      await axios.post(getApiUrl('/api/settings'), { facebookAdsToken: token.trim() })
       onSuccess()
     } catch {
       setError('Erro ao salvar. Tente novamente.')
@@ -170,7 +171,7 @@ export function Dashboard() {
 
   const fetchAccounts = useCallback(async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/facebook/accounts')
+      const res = await axios.get(getApiUrl('/api/facebook/accounts'))
       setFbAccounts(res.data.accounts || [])
     } catch (e) { console.error(e) }
   }, [])
@@ -184,7 +185,7 @@ export function Dashboard() {
       if (selectedAccount && selectedAccount !== 'all') params.set('accountId', selectedAccount)
       params.set('dateRange', dateRange)
 
-      const res = await axios.get(`http://localhost:3000/api/metrics/facebook?${params.toString()}`)
+      const res = await axios.get(getApiUrl(`/api/metrics/facebook?${params.toString()}`))
       setData(res.data)
       setLastUpdated(new Date())
     } catch (error) {

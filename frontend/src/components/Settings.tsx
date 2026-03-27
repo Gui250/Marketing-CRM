@@ -3,6 +3,7 @@ import { Save, Loader2, CheckCircle2, Circle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import axios from 'axios';
+import { getApiUrl } from '@/config/api';
 
 export function Settings() {
   // Indica se já existe token salvo no banco (não armazena o valor)
@@ -28,7 +29,7 @@ export function Settings() {
   const fetchSettings = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:3000/api/settings');
+      const res = await axios.get(getApiUrl('/api/settings'));
       // Só indicamos se existe — nunca colocamos o valor no input
       setHasFbToken(!!res.data.facebookAdsToken);
       setHasGoogleToken(!!res.data.googleAdsToken);
@@ -58,7 +59,7 @@ export function Settings() {
         return;
       }
 
-      await axios.post('http://localhost:3000/api/settings', payload);
+      await axios.post(getApiUrl('/api/settings'), payload);
       setMessage('Configurações salvas com sucesso!');
 
       // Limpa os campos e atualiza os badges
@@ -126,7 +127,7 @@ export function Settings() {
                     disabled={!facebookAdsToken || saving}
                     onClick={async () => {
                       try {
-                        const res = await axios.post('http://localhost:3000/api/test/facebook', { token: facebookAdsToken });
+                        const res = await axios.post(getApiUrl('/api/test/facebook'), { token: facebookAdsToken });
                         alert(res.data.message);
                       } catch (err: any) {
                         alert(`Erro: ${err.response?.data?.error || err.message}`);
@@ -193,7 +194,7 @@ export function Settings() {
                     disabled={!googleAdsToken || !googleAdsDeveloperToken || !googleAdsCustomerId || saving}
                     onClick={async () => {
                       try {
-                        const res = await axios.post('http://localhost:3000/api/test/google', {
+                        const res = await axios.post(getApiUrl('/api/test/google'), {
                           token: googleAdsToken,
                           developerToken: googleAdsDeveloperToken,
                           customerId: googleAdsCustomerId,

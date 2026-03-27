@@ -1,0 +1,26 @@
+# Files to ignore during Vercel deployment
+
+# Development files
+*.md
+!README.md
+.env.example
+.env.local
+.env.development
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local database
+*.db
+*.db-journal
+
+# Documentation (optional - uncomment if you don't want to deploy docs)
+# DEPLOY.md
+# VERCEL_DEPLOY.md
+# QUICK_START.md
+# TROUBLESHOOTING.md

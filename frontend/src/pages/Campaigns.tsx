@@ -3,6 +3,7 @@ import { Loader2, Megaphone } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import axios from 'axios'
+import { getApiUrl } from '@/config/api'
 
 interface Campaign {
   id: string
@@ -37,7 +38,7 @@ export function Campaigns() {
     async function fetchData() {
       setLoading(true)
       try {
-        const res = await axios.get(`http://localhost:3000/api/analytics/all-clients?dateRange=${dateRange}`)
+        const res = await axios.get(getApiUrl(`/api/analytics/all-clients?dateRange=${dateRange}`))
         setHasToken(res.data.hasToken !== false)
         const clients = res.data.clients || []
         setAccounts(clients.map((c: any) => ({
