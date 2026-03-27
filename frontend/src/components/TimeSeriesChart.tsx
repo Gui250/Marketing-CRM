@@ -15,7 +15,8 @@ export function TimeSeriesChart({ data, lines, height = 300 }: TimeSeriesChartPr
     )
   }
 
-  const formatDate = (dateStr: string) => {
+  const formatDate = (dateStr: any) => {
+    if (typeof dateStr !== 'string') return ''
     const d = new Date(dateStr + 'T00:00:00')
     return d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })
   }

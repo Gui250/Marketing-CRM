@@ -19,54 +19,11 @@ const DATE_RANGES = [
   { label: 'Últimos 30 dias', value: 'last_30d' },
 ]
 
-const PLATFORMS = [
-  { label: 'Qualquer', value: 'all' },
-  { label: 'Facebook', value: 'facebook' },
-  { label: 'Instagram', value: 'instagram' },
-]
 
 function formatCurrency(val: number) {
   return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
 
-function FilterSelect({ label, value, options, onChange }: {
-  label: string
-  value: string
-  options: { label: string; value: string }[]
-  onChange: (v: string) => void
-}) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="flex flex-col gap-1 flex-1 min-w-[160px]">
-      <span className="text-xs text-neutral-400 font-medium">{label}</span>
-      <div className="relative">
-        <button
-          onClick={() => setOpen(!open)}
-          className="flex items-center justify-between w-full px-3 py-2 text-sm border border-neutral-200 rounded-lg bg-white hover:border-neutral-300 transition-colors"
-        >
-          <span className="truncate">{options.find(o => o.value === value)?.label}</span>
-          <ChevronDown size={14} className={cn('text-neutral-400 transition-transform ml-2 shrink-0', open && 'rotate-180')} />
-        </button>
-        {open && (
-          <div className="absolute top-full left-0 mt-1 w-full bg-white border border-neutral-200 rounded-lg shadow-lg z-50 py-1 max-h-48 overflow-auto">
-            {options.map(opt => (
-              <button
-                key={opt.value}
-                onClick={() => { onChange(opt.value); setOpen(false) }}
-                className={cn(
-                  'w-full text-left px-3 py-2 text-sm hover:bg-neutral-50 transition-colors',
-                  value === opt.value && 'bg-neutral-100 font-medium'
-                )}
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
 
 function MetricCard({ label, value, color, large }: {
   label: string
