@@ -2,7 +2,12 @@ import { PrismaClient } from '@prisma/client';
 
 import { PrismaPg } from '@prisma/adapter-pg';
 
-const DB_URL = process.env.POSTGRES_PRISMA_URL || process.env.POSTGRES_URL || process.env.DATABASE_URL || 'postgresql://crm_admin:crm_password@localhost:5432/smart_crm';
+const DB_URL = process.env.POSTGRES_PRISMA_URL || process.env.POSTGRES_URL || process.env.DATABASE_URL;
+
+if (!DB_URL) {
+  console.error('❌ Erro: DATABASE_URL não encontrada para o seed.');
+  process.exit(1);
+}
 const adapter = new PrismaPg({ connectionString: DB_URL });
 const prisma = new PrismaClient({ adapter });
 
